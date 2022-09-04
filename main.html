@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+        <title>Decodificador</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="logo-alura.png">
+        </header>
+        <section class="left-box">
+            <!-- <input type="text" id="texto"> 
+            <button onclick="trocaRightBox()">criptografar</button> -->
+            
+
+            <textarea cols="70" rows="5" id="mensagem" class="input-texto" wrap="hard" placeholder="Digite seu texto"></textarea>
+
+            <div class="botoes">
+                <p><img src="importante.png" class="img-importante"> Apenas letras minúsculas e sem acento</p>
+                <input type="submit" id="criptografar" value="Criptografar" class="criptografar" onclick="criptografaTextoInserido()">
+                <input type="submit" value="Descriptografar" class="descriptografar" onclick="descriptografaTextoInserido()">
+            </div>
+        </section>
+        
+        <section class="right-box" id="right-box">
+            <ul>
+                <li><img src="personagem.png" class="personagem"></li>
+                <li><h1>Nenhuma mensagem encontrada</h1></li>
+                <li><p>Digite o texto que você deseja criptografar ou descriptografar</p></li>
+            </ul>
+        </section>
+
+        <section class="right-box2" id="right-box2">
+            <ul>
+                <li><textarea cols="70" rows="14" id="right-box2-mensagem" class="output-texto" wrap="hard" placeholder="Digite seu texto"></textarea></li>
+                
+                <div class="botoes"><input type="submit" id="copiar" value="Copiar" class="copiar" onclick="copiaTexto()"></div>
+            
+            </ul>
+        </section>
+        
+
+        
+    </body>
+</html>
+
+
+
